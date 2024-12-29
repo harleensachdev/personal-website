@@ -1,0 +1,78 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-snap-type: y mandatory; /* vertical scrolling */
+    scroll-behavior:smooth; /* animation will be slower */
+
+}
+body{
+    background: linear-gradient(to bottom, #12071f, #2f204e);
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+}
+
+a{
+    /* Anchor tag - formatting for links, remove underlining just make white */ 
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    max-width: 1536px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;;
+
+}
+section{
+    /* Gives each section (hero, service, contact, portfolio) a section height of 100?& of window's viewport */
+    height: 100vh; /*Viewport height (vh): units that represent a percentage height of a browser's window */
+    scroll-snap-align: center; /* always scrolls to middle of component */
+}
+section:nth-child(1){ /* nthchild indexes each component in the section tags in app.jsx (the first child would be the home component */
+    }
+section:nth-child(2) {
+}
+section:nth-child(3) {
+    background-color: #9788b5;
+}
+section:nth-child(4) {
+    background-color: #599ca7;
+}
+/* Create a responsive design in css*/
+@media(min-width:640px){ /* @media used in media queries to apply different styles for different devices */
+    /*In small screens(phone), max width should be 640 px instead of initially declared 1536px */
+    .container{
+        max-width: 640px;
+    }
+}
+@media(min-width:768px) {
+    /* @media used in media queries to apply different styles for different devices */
+    /*In medium screens (ipad), max width should be 768 px instead of initially declared 1536px */
+    .container {
+        max-width: 768px;
+    }
+}
+@media(min-width:1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media(min-width:1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media(min-width:1536px) {
+    .container {
+        max-width: 1536px;
+    }
+}
