@@ -8,6 +8,7 @@ const items = [
     id: 1,
     type: "Research Project",
     img: "/blank.png",
+    date: "20/12/2024",
     title: "Human Activity Recognition System",
     desc: "Currently working with a team of students at University Malaya to develop a Human Activity Recognition model for Wearable Deviceswith practical accuracy that requires minimal computational resources. The model will be integrated into an app designed for wearable devices, specifically AR glasses, which will allow real-time recognition. The primary purpose of this project is to reduce computational resource of the model so it can have a greater accuracy in wearable devices. ",
     link: "",
@@ -72,6 +73,7 @@ const ListItem = ({ item }) => {
         <motion.h2 id="researchheading" variants={textVariants}>
           {item.type}
         </motion.h2>
+        <motion.p variants={textVariants}>Created on: {item.date}</motion.p>
         <motion.p variants={textVariants}>{item.desc}</motion.p>
         <motion.a variants={textVariants} href={item.link}>
           <button>View Project</button>
@@ -79,10 +81,10 @@ const ListItem = ({ item }) => {
         <motion.a variants={textVariants}>
           {" "}
           <motion.i variants={textVariants}>
-            Scroll down to flip through other research projects, and competition
-            projects (in this order). Scroll up to go back to the previous
-            project, the mobile development projects, or the web development
-            projects.
+            Scroll down to flip through other research projects, competition
+            projects and the contact me page (in this order). Scroll up to go
+            back to the previous project, the mobile development projects, or
+            the web development projects.
           </motion.i>
         </motion.a>
 

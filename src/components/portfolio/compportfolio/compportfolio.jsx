@@ -8,6 +8,7 @@ const items = [
     id: 1,
     type: "Competitions",
     img: "/blank.png",
+    date: "19/12/2023",
     title: "American Scholastic Mathematics Competition",
     desc: "Highest scoring student in the American Scholastic Mathematics Association competition.",
     link: "https://www.asan.com/annual-math-contest",
@@ -16,6 +17,7 @@ const items = [
     id: 2,
     type: "Competitions",
     img: "/blank.png",
+    date: "12/08/2023",
     title: "Girls In Code SEA Winner",
     desc: " Awarded for excellence in competitive coding skills, advancing technology, and empowering women in STEM across Asia.",
     link: "https://seamo-official.org/",
@@ -24,6 +26,7 @@ const items = [
     id: 3,
     type: "Competitions",
     img: "/blank.png",
+    date: "01/12/2024",
     title: "KL Coding Cup",
     desc: "2x Overall School Gold Medalist",
     link: "https://seamo-official.org/",
@@ -32,6 +35,7 @@ const items = [
     id: 4,
     type: "Competitions",
     img: "/blank.png",
+    date: "19/12/2024",
     title: "MCC (Malaysian Computing Challenge) + USACO Participant",
     desc: "Issued by Malaysian Informatics And Programming Society. Qualified for the Malaysia Computing Olympiad with a silver medal in the Malaysian Computing Challenge and participated in the United States of America Computing Olympiad rounds.",
     link: "https://usaco.org/",
@@ -40,6 +44,7 @@ const items = [
     id: 5,
     type: "Competitions",
     img: "/blank.png",
+    date: "01/10/2024",
     title: "KL Intermediate Math Challenge",
     desc: "2x Overall Team Gold Medalist",
     link: "",
@@ -48,6 +53,7 @@ const items = [
     id: 6,
     type: "Hackathon",
     img: "/blank.png",
+    date: "10/10/2024",
     title: "Worthy Hacks Hackathon",
     desc: "Participated in my first hackathon - submitting reportbullyingnow web development project",
     link: "https://worthyhacks.devpost.com/?ref_feature=challenge&ref_medium=discover",
@@ -55,6 +61,7 @@ const items = [
   {
     id: 7,
     type: "Competitions",
+    date: "31/12/2024",
     img: "/blank.png",
     title: "IYMC",
     desc: "Finalist + Bronze Medalist in the IYMC (International Youth Math Challenge)",
@@ -64,6 +71,7 @@ const items = [
     id: 8,
     type: "Competitions",
     img: "/blank.png",
+    date: "10/12/2024",
     title: "UKMT Math Challenge",
     desc: "Gold Medalist in the Junior and Intermediate Math Challenge. Silver Medalist in the Senior Math Challenge. ",
     link: "https://www.kangaroomath.com.my/",
@@ -72,6 +80,7 @@ const items = [
     id: 9,
     type: "Competitions",
     img: "/blank.png",
+    date: "10/12/2023",
     title: "Seamo and Seamo X Maths",
     desc: "Achieved a bronze medal in the SEAMO math competition and the SEAMO X math competition - the second round of SEAMO (South East Asian Mathematical Olympiad).",
     link: "https://seamo-official.org/",
@@ -80,6 +89,7 @@ const items = [
     id: 10,
     type: "Competitions",
     img: "/blank.png",
+    date: "05/04/2023",
     title: "SASMO Math Competition",
     desc: "Bronze Medalist in SASMO (Singapore and Asian Schools Math Competition0",
     link: "https://smo-testing.com/sasmo/",
@@ -141,7 +151,7 @@ const ListItem = ({ item }) => {
       >
         <motion.h1 variants={textVariants}>{item.title}</motion.h1>
         <motion.h2 variants={textVariants}>{item.type}</motion.h2>
-
+        <motion.p variants={textVariants}>Created on: {item.date}</motion.p>
         <motion.p variants={textVariants}>{item.desc}</motion.p>
         <motion.a variants={textVariants} href={item.link}>
           <button>View More</button>
@@ -149,9 +159,10 @@ const ListItem = ({ item }) => {
         <motion.a variants={textVariants}>
           {" "}
           <motion.i variants={textVariants}>
-            Scroll down to flip through other competition projects. Scroll up to
-            go back to the previous project, the research projects, the mobile
-            development projects, or the web development projects.
+            Scroll down to flip through other competition projects and the
+            contact me page. Scroll up to go back to the previous project, the
+            research projects, the mobile development projects, or the web
+            development projects.
           </motion.i>
         </motion.a>
 

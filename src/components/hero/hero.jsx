@@ -61,7 +61,9 @@ const Hero = () => {
           <motion.h2 variants={awardVariants}>
             Garden International School Student
           </motion.h2>
-          <motion.p variants={awardVariants}>Scroll down to see more!</motion.p>
+          <motion.p variants={awardVariants}>
+            Scroll down to see my portfolio or contact me!
+          </motion.p>
         </motion.div>
         {/* SCROLLSVG - scalabale vector graphics*/}
         <motion.a></motion.a>

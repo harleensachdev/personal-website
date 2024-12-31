@@ -8,6 +8,7 @@ const items = [
     id: 1,
     type: "Mobile Development Project",
     img: "/blank.png",
+    date: "",
     title: "Coming soon...",
     desc: "Coming soon...",
     link: "/",
@@ -70,6 +71,7 @@ const ListItem = ({ item }) => {
       >
         <motion.h1 variants={textVariants}>{item.title}</motion.h1>
         <motion.h2 variants={textVariants}>{item.type}</motion.h2>
+        <motion.p variants={textVariants}>Created on: {item.date}</motion.p>
         <motion.p variants={textVariants}>{item.desc}</motion.p>
         <motion.a variants={textVariants} href={item.link}>
           <button>View Project</button>
@@ -78,9 +80,9 @@ const ListItem = ({ item }) => {
           {" "}
           <motion.i variants={textVariants}>
             Scroll down to flip through other mobile development projects,
-            research projects and competition projects (in this order). Scroll
-            up to go back to the previous project, or the web development
-            projects.
+            research projects, competition projects and the contact me page (in
+            this order). Scroll up to go back to the previous project, or the
+            web development projects.
           </motion.i>
         </motion.a>
 

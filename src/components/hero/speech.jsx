@@ -17,6 +17,8 @@ const Speech = () => {
             1000,
             "Scroll down to see competitions and hackathons I have participated in!",
             1000,
+            "Scroll down to contact me!",
+            1000,
           ]}
           wrapper="span"
           speed={40}
