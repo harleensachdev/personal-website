@@ -1,6 +1,13 @@
-.portfolio {
-    height: 600vh;
+.compportfolio {
+    height: 1400vh;
     position: relative;
+}
+.PTitle{
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: 100vh;
+    width: max-content;
 }
 
 .pList {
@@ -74,28 +81,36 @@
     object-fit: cover;
 }
 
-.pText {
+.comppText {
     width: 40%;
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-.pText h1 {
-    font-size: 56px;
+.comppText h1 {
+    font-size: 40px;
+}
+.comppText h2 {
+    font-size: 25px;
+    color: rgb(245, 255, 192)
 }
 
-.pText p {
+.comppText p {
     font-weight: 300;
 }
 
-.pText button {
+.comppText button {
     background-color: pink;
     padding: 12px;
     border-radius: 10px;
     border: none;
     font-weight: 500;
     cursor: pointer;
+}
+.comppText button:hover {
+    background-color: #e654bd;
+    /* Optional hover effect for interactivity */
 }
 
 @media (max-width: 1536px) {

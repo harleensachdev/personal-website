@@ -1,47 +1,48 @@
 import { useEffect, useRef, useState } from "react";
-import "./portfolio.css";
+import "./webportfolio.css";
 import { motion, useInView, useScroll, useTransform } from "motion/react";
+import { Link } from "react-scroll";
 
 const items = [
   {
     id: 1,
-    type: "webdevelopment",
-    img: "/p1.jpg",
-    title: "Full Stack Blog Application",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
+    type: "Web Development Project",
+    img: "/reportbullyingnow.png",
+    title: "ReportBullyingNow",
+    desc: "Created ReportBullyingNow, an anti-bullying platform adopted by schools in Kuala Lumpur. The platform includes an anonymous reporting system and data analytics tools for identifying bullying trends. Worked with school administrators to implement policies, promote a safer environment, and empower students to report issues without fear",
+    link: "https://reportbullyingnow.online",
   },
   {
     id: 2,
-    type: "webdevelopment",
-    img: "/p2.jpg",
-    title: "School Management System",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
+    type: "Web Development Project",
+    img: "/teachmemusic.png",
+    title: "Teach Me Music",
+    desc: "Developed TeachMeMusic, a web-based application to support music students, particularly those in remote or underserved areas. The app provides rhythm checking, pitch accuracy, and interactive score display, with immediate feedback on timing, intonation, and musicality. Currently supports MusicXML and MIDI file formats, with Optical Music Recognition (OMR) in development to allow uploads of sheet music images or PDFs, further enhancing accessibility..",
+    link: "https://teachmemusic.onrender.com",
   },
   {
     id: 3,
-    type: "researchproject",
-    img: "/p3.jpg",
-    title: "Real-time Chat Application",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
+    type: "Web Development Project",
+    img: "/interactivemap.png",
+    title: "Interactive Map",
+    desc: "Designed and implemented an interactive digital map for my school, allowing new students, staff, and visitors to navigatethe campus with ease. The map includes clickable areas, room details, accessibility information, and navigation instructions.",
+    link: "https://harleensachdev.github.io/interactiveschoolmap/",
   },
   {
     id: 4,
-    type: "researchproject",
-    img: "/p4.jpg",
-    title: "Social Media Project",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
+    type: "Web Development Project",
+    img: "/pizzafusion.png",
+    title: "Pizza Fusion Game",
+    desc: "A remix of the popular 2048 game. ",
+    link: "https://harleensachdev.github.io/pizzafusion/",
   },
   {
     id: 5,
-    type: "competitionproject",
-    img: "/p5.jpg",
-    title: "Animated Portfolio Website",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
+    type: "Web Development Project",
+    img: "/personalwebsite.png",
+    title: "Personal Website",
+    desc: "A personal website using symbols from LAMADEV to collate my personal projects in one place",
+    link: "https://harleensachdev.com.my",
   },
 ];
 
@@ -97,19 +98,40 @@ const ListItem = ({ item }) => {
       <motion.div
         variants={textVariants}
         animate={isInView ? "animate" : "initial"}
-        className="pText"
+        className="webpText"
       >
         <motion.h1 variants={textVariants}>{item.title}</motion.h1>
+        <motion.h2 variants={textVariants}>{item.type}</motion.h2>
         <motion.p variants={textVariants}>{item.desc}</motion.p>
         <motion.a variants={textVariants} href={item.link}>
           <button>View Project</button>
         </motion.a>
+        <motion.a variants={textVariants}>
+          {" "}
+          <motion.i variants={textVariants}>
+            Scroll down to flip through other web development projects, mobile
+            development projects, research projects and competition projects (in
+            this order). Scroll up to go back to the previous project.
+          </motion.i>
+        </motion.a>
+
+        <Link
+          variants={textVariants}
+          className="backbutton"
+          to="services"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
+          Back to my portfolio
+        </Link>
       </motion.div>
     </div>
   );
 };
 
-const Portfolio = () => {
+const WebPortfolio = () => {
   const [containerDistance, setContainerDistance] = useState(0);
   const ref = useRef(null);
 
@@ -147,7 +169,7 @@ const Portfolio = () => {
   );
 
   return (
-    <div className="portfolio" ref={ref}>
+    <div className="webportfolio" ref={ref}>
       <motion.div className="pList" style={{ x: xTranslate }}>
         <div
           className="empty"
@@ -165,6 +187,7 @@ const Portfolio = () => {
       <section />
       <section />
       <section />
+
       <div className="pProgress">
         <svg width="100%" height="100%" viewBox="0 0 160 160">
           <circle
@@ -191,4 +214,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default WebPortfolio;

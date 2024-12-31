@@ -1,6 +1,9 @@
 import Hero from "./components/hero/hero";
 import Services from "./components/services/services";
-import Portfolio from "./components/portfolio/portfolio";
+import CompPortfolio from "./components/portfolio/compportfolio/compportfolio";
+import WebPortfolio from "./components/portfolio/webportfolio/webdevelopmentportfolio";
+import MobilePortfolio from "./components/portfolio/mobileportfolio/mobileportfolio";
+import ResearchPortfolio from "./components/portfolio/researchportfolio/researchportfolio";
 import Contact from "./components/contact/contact";
 const App = () => {
   return (
@@ -14,7 +17,18 @@ const App = () => {
       <section id="#services">
         <Services />
       </section>
-      <Portfolio />
+      <div id="web-portfolio">
+        <WebPortfolio />
+      </div>
+      <div id="mobile-portfolio">
+        <MobilePortfolio />
+      </div>
+      <div id="research-portfolio">
+        <ResearchPortfolio />
+      </div>
+      <div id="comp-portfolio">
+        <CompPortfolio />
+      </div>
       <section id="#contact">
         <Contact />
       </section>

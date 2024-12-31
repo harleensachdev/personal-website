@@ -102,19 +102,23 @@
     width: 120px;
 }
 .viewProjectsButton {
-
-        background-color: pink;
-        padding: 12px;
-        border-radius: 10px;
-        border: none;
-        font-weight: 500;
-        cursor: pointer;
-    
+    color: black; /* Text color */
+    background-color: pink; /* Background color */
+    padding: 12px; /* Padding to make it button-like */
+    border-radius: 10px; /* Rounded corners */
+    border: none; /* Remove default border */
+    font-weight: 500; /* Make the text bold */
+    text-decoration: none; /* Remove underline from the link */
+    display: inline-block; /* Make it behave like a block-level element */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+    text-align: center; /* Ensures the text is centered within the button */
 }
 
 .viewProjectsButton:hover {
-    background-color: #e5c7e1;
+    background-color: #ff66b2; /* Optional hover effect for interactivity */
 }
+
+
 @media (max-width: 1536px) {
 
     .service,

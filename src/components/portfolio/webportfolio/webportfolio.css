@@ -1,0 +1,173 @@
+.webportfolio {
+    height: 600vh;
+    position: relative;
+}
+
+.pList {
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: 100vh;
+    width: max-content;
+}
+
+.pItem {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+/* .pItem:nth-child(1) {
+  background: linear-gradient(to right, #12071f, #210b3a);
+}
+.pItem:nth-child(2) {
+  background: linear-gradient(to right, #210b3a, #27084a);
+}
+.pItem:nth-child(3) {
+  background: linear-gradient(to right, #27084a, #220345);
+}
+.pItem:nth-child(4) {
+  background: linear-gradient(to right, #220345, #2a0159);
+}
+.pItem:nth-child(5) {
+  background: linear-gradient(to right, #2a0159, #12071f);
+} */
+
+/* WE'LL NOT GIVE BACKGROUND COLOR TO THE FIRST AND LAST ITEMS (to keep scrolling effect consistent) */
+.pItem:nth-child(3) {
+    background: linear-gradient(to right, transparent, #260622);
+}
+
+.pItem:nth-child(4) {
+    background: linear-gradient(to right, #260622, #02222e);
+}
+
+.pItem:nth-child(5) {
+    background: linear-gradient(to right, #02222e, #12071f);
+}
+
+.pItem:nth-child(6) {
+    background: linear-gradient(to right, #12071f, transparent);
+}
+
+.pProgress {
+    position: sticky;
+    width: 80px;
+    height: 80px;
+    left: 0;
+    bottom: 80%;
+}
+
+.pImg {
+    width: 40%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.pImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.webpText {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.webpText h1 {
+    font-size: 56px;
+}
+.webpText h2 {
+    font-size: 25px;
+    color: #edb4b4;
+}
+.webpText webheading {
+    font-size: 25px;
+    color: #f9aeae;
+}
+
+.webpText p {
+    font-weight: 300;
+}
+.backbutton {
+    color: black;
+    /* Text color */
+    background-color: rgb(192, 206, 255);
+    /* Background color */
+    padding: 12px;
+    /* Padding to make it button-like */
+    border-radius: 10px;
+    /* Rounded corners */
+    border: none;
+    /* Remove default border */
+    font-weight: 500;
+    /* Make the text bold */
+    text-decoration: none;
+    /* Remove underline from the link */
+    display: inline-block;
+    /* Make it behave like a block-level element */
+    cursor: pointer;
+    /* Change cursor to indicate it's clickable */
+    text-align: center;
+    /* Ensures the text is centered within the button */
+}
+
+.backbutton:hover {
+    background-color: #5463e6;
+    /* Optional hover effect for interactivity */
+}
+.webpText button {
+    background-color: pink;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+.webpText button:hover {
+    background-color: #e654bd;
+    /* Optional hover effect for interactivity */
+}
+
+
+@media (max-width: 1536px) {
+    .pItem {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .pText h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .pItem {
+        flex-direction: column;
+    }
+
+    .pImg,
+    .pText {
+        width: 80%;
+    }
+
+    .pProgress {
+        bottom: 100px;
+        left: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .pProgress {
+        width: 50px;
+        height: 50px;
+    }
+}

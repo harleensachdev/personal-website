@@ -10,6 +10,7 @@ import { useInView } from "motion/react";
 import { transition } from "three/examples/jsm/tsl/display/TransitionNode.js";
 import { motion } from "motion/react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const listVariants = {
   initial: {
@@ -45,7 +46,7 @@ const services = [
     id: 1,
     img: "/service1.png",
     title: "Web Development",
-    counter: 0,
+    counter: 5,
   },
   {
     id: 2,
@@ -57,16 +58,16 @@ const services = [
     id: 3,
     img: "/service2.png",
     title: "Research",
-    counter: 0,
+    counter: 1,
   },
   {
     id: 4,
     img: "/service3.png",
     title: "Competitions + Hackathons",
-    counter: 0,
+    counter: 13,
   },
 ];
-const Services = () => {
+const Services = ({ webRef }) => {
   const [currentServiceId, setCurrentServiceId] = useState(1);
   const ref = useRef();
   const isInView = useInView(ref, { margin: "-200px" });
@@ -112,51 +113,65 @@ const Services = () => {
           ))}
         </motion.div>
         <div className="counterList">
-          <Counter from={0} to={104} text="Projects Completed" />
+          <Counter from={0} to={19} text="Projects Completed" />
         </div>
       </div>
       <div className="sSection right">
         {currentServiceId === 1 ? (
           <>
             <ComputerModelContainer />
-            <button
+            <Link
               className="viewProjectsButton"
-              onClick={() => (window.location.href = "/portfolio")}
+              to="web-portfolio"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
             >
-              View Web Development Projects
-            </button>
+              See Web Development Projects
+            </Link>
           </>
         ) : currentServiceId === 2 ? (
           <>
             <IphoneModelContainer />
-            <button
+            <Link
               className="viewProjectsButton"
-              onClick={() =>
-                (window.location.href = "/mobiledevelopment-portfolio")
-              }
+              to="mobile-portfolio"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
             >
-              View Mobile Development Projects
-            </button>
+              See Mobile Development Projects
+            </Link>
           </>
         ) : currentServiceId === 3 ? (
           <>
             <CubeModelContainer />
-            <button
+            <Link
               className="viewProjectsButton"
-              onClick={() => navigate("/webdevelopment-portfolio")}
+              to="research-portfolio"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
             >
-              View Research Projects
-            </button>
+              See Research Projects
+            </Link>
           </>
         ) : (
           <>
             <MountainModelContainer />
-            <button
+            <Link
               className="viewProjectsButton"
-              onClick={() => (window.location.href = "/competition-portfolio")}
+              to="comp-portfolio"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
             >
-              View Competition and Hackathon Projects
-            </button>
+              See Competitions
+            </Link>
           </>
         )}
       </div>
