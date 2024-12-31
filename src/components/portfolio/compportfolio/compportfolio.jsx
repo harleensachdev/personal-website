@@ -60,25 +60,8 @@ const items = [
     desc: "Finalist + Bronze Medalist in the IYMC (International Youth Math Challenge)",
     link: "https://iymc.info/en/",
   },
-
   {
     id: 8,
-    type: "Competitions",
-    img: "/blank.png",
-    title: "Kangaroo Math Challenge",
-    desc: "Gold + Bronze Medalist in the Kangaroo Math Challenge",
-    link: "https://www.kangaroomath.com.my/",
-  },
-  {
-    id: 9,
-    type: "Competitions",
-    img: "/blank.png",
-    title: "Kangaroo Math Second Round Qualifier",
-    desc: "One of 326 students out of 66,000 participants to advance to the second round of the Kangaroo Maths competition.",
-    link: "https://www.kangaroomath.com.my/",
-  },
-  {
-    id: 10,
     type: "Competitions",
     img: "/blank.png",
     title: "UKMT Math Challenge",
@@ -86,23 +69,15 @@ const items = [
     link: "https://www.kangaroomath.com.my/",
   },
   {
-    id: 11,
+    id: 9,
     type: "Competitions",
     img: "/blank.png",
     title: "Seamo and Seamo X Maths",
-    desc: "Achieved a gold medal the SEAMO math competition and a silver medal in the SEAMO X math competition - the second round of SEAMO (South East Asian Mathematical Olympiad).",
+    desc: "Achieved a bronze medal in the SEAMO math competition and the SEAMO X math competition - the second round of SEAMO (South East Asian Mathematical Olympiad).",
     link: "https://seamo-official.org/",
   },
   {
-    id: 12,
-    type: "Competitions",
-    img: "/blank.png",
-    title: "IMONST National Maths Competition",
-    desc: "Silver Medalist in the Malaysian National Maths Competition",
-    link: "https://imo-malaysia.org/imonst1/",
-  },
-  {
-    id: 13,
+    id: 10,
     type: "Competitions",
     img: "/blank.png",
     title: "SASMO Math Competition",
@@ -110,7 +85,6 @@ const items = [
     link: "https://smo-testing.com/sasmo/",
   },
 ];
-
 const imgVariants = {
   initial: {
     x: -500,
@@ -249,9 +223,6 @@ const CompPortfolio = () => {
         ))}
       </motion.div>
 
-      <section />
-      <section />
-      <section />
       <section />
       <section />
       <section />
