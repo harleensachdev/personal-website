@@ -52,7 +52,7 @@ const items = [
     date: "31/12/2024",
     title: "Personal Website",
     desc: "A personal website using symbols from LAMADEV to collate my personal projects in one place",
-    link: "https://harleensachdev.com.my",
+    link: "https://harleensachdev.github.io/personal-website/",
   },
 ];
 
