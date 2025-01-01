@@ -2,7 +2,6 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { MountainModel } from "./MountainModel";
 import { OrbitControls, PerspectiveCamera, Stage } from "@react-three/drei";
-import mountainModelPath from "/mountain.glb?url"; // Adjust the path based on your project structure
 
 const MountainModelContainer = () => {
   return (
