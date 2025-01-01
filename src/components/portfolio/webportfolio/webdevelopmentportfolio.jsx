@@ -15,7 +15,7 @@ const items = [
     img: reportbullyingnowImage,
     date: "29/09/2024",
     title: "ReportBullyingNow",
-    desc: "Created ReportBullyingNow, an anti-bullying platform for schools in Kuala Lumpur. The platform includes an anonymous reporting system and data analytics tools for identifying bullying trends. Worked with school administrators to implement policies, promote a safer environment, and empower students to report issues without fear",
+    desc: "Created ReportBullyingNow, an anti-bullying platform for schools in Kuala Lumpur. The platform includes an anonymous reporting system, a data analytics tools for identifying bullying trends. Working with school administrators to implement policies, promote a safer environment, and empower students to report issues without fear",
     link: "https://harleensachdev.github.io/reportbullyingnow/",
   },
   {
