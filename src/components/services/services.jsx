@@ -11,6 +11,9 @@ import { transition } from "three/examples/jsm/tsl/display/TransitionNode.js";
 import { motion } from "motion/react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-scroll";
+import service1 from "/service1.png"; // Replace with the correct path to your images if needed
+import service2 from "/service2.png"; // Replace with the correct path to your images if needed
+import service3 from "/service3.png"; // Replace with the correct path to your images if needed
 
 const listVariants = {
   initial: {
@@ -44,25 +47,25 @@ const textVariants = {
 const services = [
   {
     id: 1,
-    img: "/service1.png",
+    img: service1,
     title: "Web Development",
     counter: 5,
   },
   {
     id: 2,
-    img: "/service1.png",
+    img: service1,
     title: "Mobile Development",
     counter: 0,
   },
   {
     id: 3,
-    img: "/service2.png",
+    img: service2,
     title: "Research",
     counter: 1,
   },
   {
     id: 4,
-    img: "/service3.png",
+    img: service3,
     title: "Competitions + Hackathons",
     counter: 10,
   },

@@ -9,9 +9,10 @@ Title: 3 Mountain
 
 import React from "react";
 import { useGLTF } from "@react-three/drei";
+import mountainModelPath from "/mountain.glb?url"; // Adjust the path based on your project structure
 
 export function MountainModel(props) {
-  const { nodes, materials } = useGLTF("/mountain.glb");
+  const { nodes, materials } = useGLTF(mountainModelPath);
   return (
     <group {...props} dispose={null}>
       <group position={[0, -0.152, 0.157]} rotation={[3.112, 0, 0]}>
@@ -40,4 +41,4 @@ export function MountainModel(props) {
   );
 }
 
-useGLTF.preload("/mountain.glb");
+useGLTF.preload(mountainModelPath);

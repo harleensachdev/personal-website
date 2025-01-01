@@ -1,13 +1,15 @@
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./compportfolio.css";
 import { motion, useInView, useScroll, useTransform } from "motion/react";
 import { Link } from "react-scroll";
+
+import blankImage from "/blank.png"; // Replace with the correct path to your images if needed
 
 const items = [
   {
     id: 1,
     type: "Competitions",
-    img: "/blank.png",
+    img: blankImage,
     date: "19/12/2023",
     title: "American Scholastic Mathematics Competition",
     desc: "Highest scoring student in the American Scholastic Mathematics Association competition.",
@@ -16,16 +18,16 @@ const items = [
   {
     id: 2,
     type: "Competitions",
-    img: "/blank.png",
+    img: blankImage,
     date: "12/08/2023",
     title: "Girls In Code SEA Winner",
-    desc: " Awarded for excellence in competitive coding skills, advancing technology, and empowering women in STEM across Asia.",
+    desc: "Awarded for excellence in competitive coding skills, advancing technology, and empowering women in STEM across Asia.",
     link: "https://seamo-official.org/",
   },
   {
     id: 3,
     type: "Competitions",
-    img: "/blank.png",
+    img: blankImage,
     date: "01/12/2024",
     title: "KL Coding Cup",
     desc: "2x Overall School Gold Medalist",
@@ -34,7 +36,7 @@ const items = [
   {
     id: 4,
     type: "Competitions",
-    img: "/blank.png",
+    img: blankImage,
     date: "19/12/2024",
     title: "MCC (Malaysian Computing Challenge) + USACO Participant",
     desc: "Issued by Malaysian Informatics And Programming Society. Qualified for the Malaysia Computing Olympiad with a silver medal in the Malaysian Computing Challenge and participated in the United States of America Computing Olympiad rounds.",
@@ -43,7 +45,7 @@ const items = [
   {
     id: 5,
     type: "Competitions",
-    img: "/blank.png",
+    img: blankImage,
     date: "01/10/2024",
     title: "KL Intermediate Math Challenge",
     desc: "2x Overall Team Gold Medalist",
@@ -52,7 +54,7 @@ const items = [
   {
     id: 6,
     type: "Hackathon",
-    img: "/blank.png",
+    img: blankImage,
     date: "10/10/2024",
     title: "Worthy Hacks Hackathon",
     desc: "Participated in my first hackathon - submitting reportbullyingnow web development project",
@@ -62,7 +64,7 @@ const items = [
     id: 7,
     type: "Competitions",
     date: "31/12/2024",
-    img: "/blank.png",
+    img: blankImage,
     title: "IYMC",
     desc: "Finalist + Bronze Medalist in the IYMC (International Youth Math Challenge)",
     link: "https://iymc.info/en/",
@@ -70,16 +72,16 @@ const items = [
   {
     id: 8,
     type: "Competitions",
-    img: "/blank.png",
+    img: blankImage,
     date: "10/12/2024",
     title: "UKMT Math Challenge",
-    desc: "Gold Medalist in the Junior and Intermediate Math Challenge. Silver Medalist in the Senior Math Challenge. ",
+    desc: "Gold Medalist in the Junior and Intermediate Math Challenge. Silver Medalist in the Senior Math Challenge.",
     link: "https://www.kangaroomath.com.my/",
   },
   {
     id: 9,
     type: "Competitions",
-    img: "/blank.png",
+    img: blankImage,
     date: "10/12/2023",
     title: "Seamo and Seamo X Maths",
     desc: "Achieved a bronze medal in the SEAMO math competition and the SEAMO X math competition - the second round of SEAMO (South East Asian Mathematical Olympiad).",
@@ -88,13 +90,14 @@ const items = [
   {
     id: 10,
     type: "Competitions",
-    img: "/blank.png",
+    img: blankImage,
     date: "05/04/2023",
     title: "SASMO Math Competition",
-    desc: "Bronze Medalist in SASMO (Singapore and Asian Schools Math Competition0",
+    desc: "Bronze Medalist in SASMO (Singapore and Asian Schools Math Competition)",
     link: "https://smo-testing.com/sasmo/",
   },
 ];
+
 const imgVariants = {
   initial: {
     x: -500,

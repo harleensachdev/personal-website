@@ -9,9 +9,10 @@ Title: iPhone 12 Pro
 
 import React from "react";
 import { useGLTF } from "@react-three/drei";
+import iphoneModelPath from "/iphone.glb?url"; // Adjust the path based on your project structure
 
 export function IphoneModel(props) {
-  const { nodes, materials } = useGLTF("/iphone.glb");
+  const { nodes, materials } = useGLTF(iphoneModelPath);
   return (
     <group {...props} dispose={null}>
       <group position={[0, -2.588, 2.419]}>
@@ -201,4 +202,4 @@ export function IphoneModel(props) {
   );
 }
 
-useGLTF.preload("/iphone.glb");
+useGLTF.preload(iphoneModelPath);

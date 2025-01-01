@@ -9,9 +9,10 @@ Title: Tesseract Cube
 
 import React from "react";
 import { useGLTF } from "@react-three/drei";
+import cubeModelPath from "/cube.glb?url"; // Adjust the path based on your project structure
 
 export function CubeModel(props) {
-  const { nodes, materials } = useGLTF("/cube.glb");
+  const { nodes, materials } = useGLTF(cubeModelPath);
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -24,4 +25,4 @@ export function CubeModel(props) {
   );
 }
 
-useGLTF.preload("/cube.glb");
+useGLTF.preload(cubeModelPath);

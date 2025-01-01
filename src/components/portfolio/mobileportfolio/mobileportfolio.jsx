@@ -2,12 +2,13 @@ import { useEffect, useRef, useState } from "react";
 import "./mobileportfolio.css";
 import { motion, useInView, useScroll, useTransform } from "motion/react";
 import { Link } from "react-scroll";
+import blankImage from "/blank.png"; // Replace with the correct path to your images if needed
 
 const items = [
   {
     id: 1,
     type: "Mobile Development Project",
-    img: "/blank.png",
+    img: blankImage,
     date: "",
     title: "Coming soon...",
     desc: "Coming soon...",

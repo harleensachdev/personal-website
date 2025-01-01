@@ -2,12 +2,17 @@ import { useEffect, useRef, useState } from "react";
 import "./webportfolio.css";
 import { motion, useInView, useScroll, useTransform } from "motion/react";
 import { Link } from "react-scroll";
+import reportbullyingnowImage from "/reportbullyingnow.png"; // Replace with the correct path to your images if needed
+import teachmemusicImage from "/teachmemusic.png"; // Replace with the correct path to your images if needed
+import pizzaImage from "/pizzafusion.png"; // Replace with the correct path to your images if needed
+import personalwebsiteImage from "/personalwebsite.png"; // Replace with the correct path to your images if needed
+import mapImage from "/interactivemap.png"; // Replace with the correct path to your images if needed
 
 const items = [
   {
     id: 1,
     type: "Web Development Project",
-    img: "/reportbullyingnow.png",
+    img: reportbullyingnowImage,
     date: "29/09/2024",
     title: "ReportBullyingNow",
     desc: "Created ReportBullyingNow, an anti-bullying platform adopted by schools in Kuala Lumpur. The platform includes an anonymous reporting system and data analytics tools for identifying bullying trends. Worked with school administrators to implement policies, promote a safer environment, and empower students to report issues without fear",
@@ -16,7 +21,7 @@ const items = [
   {
     id: 2,
     type: "Web Development Project",
-    img: "/teachmemusic.png",
+    img: teachmemusicImage,
     date: "20/11/2024",
     title: "Teach Me Music",
     desc: "Developed TeachMeMusic, a web-based application to support music students, particularly those in remote or underserved areas. The app provides rhythm checking, pitch accuracy, and interactive score display, with immediate feedback on timing, intonation, and musicality. Currently supports MusicXML and MIDI file formats, with Optical Music Recognition (OMR) in development to allow uploads of sheet music images or PDFs, further enhancing accessibility..",
@@ -25,7 +30,7 @@ const items = [
   {
     id: 3,
     type: "Web Development Project",
-    img: "/interactivemap.png",
+    img: mapImage,
     date: "09/08/2024",
     title: "Interactive Map",
     desc: "Designed and implemented an interactive digital map for my school, allowing new students, staff, and visitors to navigatethe campus with ease. The map includes clickable areas, room details, accessibility information, and navigation instructions.",
@@ -34,7 +39,7 @@ const items = [
   {
     id: 4,
     type: "Web Development Project",
-    img: "/pizzafusion.png",
+    img: pizzaImage,
     date: "09/06/2024",
     title: "Pizza Fusion Game",
     desc: "A remix of the popular 2048 game. ",
@@ -43,7 +48,7 @@ const items = [
   {
     id: 5,
     type: "Web Development Project",
-    img: "/personalwebsite.png",
+    img: personalwebsiteImage,
     date: "31/12/2024",
     title: "Personal Website",
     desc: "A personal website using symbols from LAMADEV to collate my personal projects in one place",

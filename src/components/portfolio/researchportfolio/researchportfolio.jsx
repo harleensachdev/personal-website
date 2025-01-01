@@ -2,12 +2,13 @@ import { useEffect, useRef, useState } from "react";
 import "./researchportfolio.css";
 import { motion, useInView, useScroll, useTransform } from "motion/react";
 import { Link } from "react-scroll";
+import blankImage from "/blank.png"; // Replace with the correct path to your images if needed
 
 const items = [
   {
     id: 1,
     type: "Research Project",
-    img: "/blank.png",
+    img: blankImage,
     date: "20/12/2024",
     title: "Human Activity Recognition System",
     desc: "Currently working with a team of students at University Malaya to develop a Human Activity Recognition model for Wearable Deviceswith practical accuracy that requires minimal computational resources. The model will be integrated into an app designed for wearable devices, specifically AR glasses, which will allow real-time recognition. The primary purpose of this project is to reduce computational resource of the model so it can have a greater accuracy in wearable devices. ",

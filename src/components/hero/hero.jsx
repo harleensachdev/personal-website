@@ -2,9 +2,15 @@ import "./hero.css";
 import { motion } from "motion/react";
 import { Canvas } from "@react-three/fiber";
 import Shape from "./shape";
-// MOTION ELEMENTS FROM https://motion.dev/docs/react-quick-start
 import Speech from "./speech";
 import { Suspense } from "react";
+
+// Importing PNG images
+import instagramImg from "/instagram.png";
+import linkedinImg from "/linkedin2.webp";
+import youtubeImg from "/youtube.png";
+
+// MOTION ELEMENTS FROM https://motion.dev/docs/react-quick-start
 const awardVariants = {
   initial: {
     x: -100,
@@ -65,7 +71,7 @@ const Hero = () => {
             Scroll down to see my portfolio or contact me!
           </motion.p>
         </motion.div>
-        {/* SCROLLSVG - scalabale vector graphics*/}
+        {/* SCROLLSVG - scalable vector graphics*/}
         <motion.a></motion.a>
       </div>
       <div className="hSection right">
@@ -80,19 +86,19 @@ const Hero = () => {
             variants={followVariants}
             href="https://www.instagram.com/harleensch/"
           >
-            <img src="/instagram.png" alt="" />
+            <img src={instagramImg} alt="Instagram" />
           </motion.a>
           <motion.a
             variants={followVariants}
             href="https://www.linkedin.com/in/harleen-sachdev-66a572336/"
           >
-            <img src="/linkedin2.webp" alt="" />
+            <img src={linkedinImg} alt="LinkedIn" />
           </motion.a>
           <motion.a
             variants={followVariants}
             href="https://www.youtube.com/@harleensachdev9461"
           >
-            <img src="/youtube.png" alt="" />
+            <img src={youtubeImg} alt="YouTube" />
           </motion.a>
           <motion.div variants={followVariants} className="followTextContainer">
             <div className="followText">CLICK TO FIND ME</div>
@@ -163,7 +169,7 @@ const Hero = () => {
       <div className="bg">
         {/* 3d */}
         <Canvas>
-          {/* canvas call sets up a sceen for rendering 3d components */}
+          {/* canvas call sets up a screen for rendering 3d components */}
           <Suspense fallback="loading...">
             {" "}
             {/* command suspense from react automatically switches to a fallback page when waiting for a child to load*/}
