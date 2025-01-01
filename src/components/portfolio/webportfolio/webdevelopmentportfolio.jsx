@@ -15,8 +15,8 @@ const items = [
     img: reportbullyingnowImage,
     date: "29/09/2024",
     title: "ReportBullyingNow",
-    desc: "Created ReportBullyingNow, an anti-bullying platform adopted by schools in Kuala Lumpur. The platform includes an anonymous reporting system and data analytics tools for identifying bullying trends. Worked with school administrators to implement policies, promote a safer environment, and empower students to report issues without fear",
-    link: "https://reportbullyingnow.online",
+    desc: "Created ReportBullyingNow, an anti-bullying platform for schools in Kuala Lumpur. The platform includes an anonymous reporting system and data analytics tools for identifying bullying trends. Worked with school administrators to implement policies, promote a safer environment, and empower students to report issues without fear",
+    link: "https://harleensachdev.github.io/reportbullyingnow/",
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const items = [
     img: mapImage,
     date: "09/08/2024",
     title: "Interactive Map",
-    desc: "Designed and implemented an interactive digital map for my school, allowing new students, staff, and visitors to navigatethe campus with ease. The map includes clickable areas, room details, accessibility information, and navigation instructions.",
+    desc: "Designed and implemented an interactive digital map for my school, allowing new students, staff, and visitors to navigate the campus with ease. The map includes clickable areas, room details, accessibility information, and navigation instructions.",
     link: "https://harleensachdev.github.io/interactiveschoolmap/",
   },
   {
