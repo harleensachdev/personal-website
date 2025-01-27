@@ -2,17 +2,15 @@ import { useEffect, useRef, useState } from "react";
 import "./mobileportfolio.css";
 import { motion, useInView, useScroll, useTransform } from "motion/react";
 import { Link } from "react-scroll";
-import blankImage from "/blank.png"; // Replace with the correct path to your images if needed
 
 const items = [
   {
     id: 1,
     type: "Mobile Development Project",
-    img: blankImage,
-    date: "",
-    title: "Coming soon...",
-    desc: "Coming soon...",
-    link: "/",
+    img: "./violintutor.png",
+    title: "ViolinTutor",
+    desc: "An IOS mobile application developed in Swift for advanced violin learners. Allows higher grade musicians to input complex lines of their violin scores and play through it. Has a rhythm test feature that allows students to test their tempo maintenence with an inbuilt metronome, along with their accuracy at various speeds. Aims to support violin learners in remote communities with limited access to violin tutoring and external support. ",
+    link: "https://github.com/harleensachdev/tutorviolin",
   },
 ];
 
@@ -72,7 +70,6 @@ const ListItem = ({ item }) => {
       >
         <motion.h1 variants={textVariants}>{item.title}</motion.h1>
         <motion.h2 variants={textVariants}>{item.type}</motion.h2>
-        <motion.p variants={textVariants}>Created on: {item.date}</motion.p>
         <motion.p variants={textVariants}>{item.desc}</motion.p>
         <motion.a variants={textVariants} href={item.link}>
           <button>View Project</button>
@@ -81,9 +78,9 @@ const ListItem = ({ item }) => {
           {" "}
           <motion.i variants={textVariants}>
             Scroll down to flip through other mobile development projects,
-            research projects, competition projects and the contact me page (in
-            this order). Scroll up to go back to the previous project, or the
-            web development projects.
+            research projects and competition projects (in this order). Scroll
+            up to go back to the previous project, or the web development
+            projects.
           </motion.i>
         </motion.a>
 

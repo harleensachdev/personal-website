@@ -55,7 +55,7 @@ const services = [
     id: 2,
     img: service1,
     title: "Mobile Development",
-    counter: 0,
+    counter: 1,
   },
   {
     id: 3,
@@ -116,7 +116,7 @@ const Services = ({ webRef }) => {
           ))}
         </motion.div>
         <div className="counterList">
-          <Counter from={0} to={16} text="Projects Completed" />
+          <Counter from={0} to={20} text="Projects Completed" />
         </div>
       </div>
       <div className="sSection right">
