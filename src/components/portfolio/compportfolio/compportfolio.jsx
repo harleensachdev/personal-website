@@ -2,12 +2,21 @@ import React, { useEffect, useRef, useState } from "react";
 import "./compportfolio.css";
 import { motion, useInView, useScroll, useTransform } from "motion/react";
 import { Link } from "react-scroll";
-
-import blankImage from "/blank.png"; // Replace with the correct path to your images if needed
+import blankImage from "/blank.png";
+import copilotPreview from "/gisaimodel.png"; // Replace with the correct path to your images if needed
 
 const items = [
   {
     id: 1,
+    type: "Competitions",
+    img: copilotPreview,
+    date: "02/02/2025",
+    title: "School AI chatbot",
+    desc: "Created an AI chatbot to provide information to prospective parents",
+    link: "",
+  },
+  {
+    id: 2,
     type: "Competitions",
     img: blankImage,
     date: "19/12/2023",
@@ -16,7 +25,7 @@ const items = [
     link: "https://www.asan.com/annual-math-contest",
   },
   {
-    id: 2,
+    id: 3,
     type: "Competitions",
     img: blankImage,
     date: "12/08/2023",
@@ -25,7 +34,7 @@ const items = [
     link: "https://seamo-official.org/",
   },
   {
-    id: 3,
+    id: 4,
     type: "Competitions",
     img: blankImage,
     date: "01/12/2024",
@@ -34,7 +43,7 @@ const items = [
     link: "https://seamo-official.org/",
   },
   {
-    id: 4,
+    id: 5,
     type: "Competitions",
     img: blankImage,
     date: "19/12/2024",
@@ -43,7 +52,7 @@ const items = [
     link: "https://usaco.org/",
   },
   {
-    id: 5,
+    id: 6,
     type: "Competitions",
     img: blankImage,
     date: "01/10/2024",
@@ -52,7 +61,7 @@ const items = [
     link: "",
   },
   {
-    id: 6,
+    id: 7,
     type: "Hackathon",
     img: blankImage,
     date: "10/10/2024",
@@ -61,7 +70,7 @@ const items = [
     link: "https://worthyhacks.devpost.com/?ref_feature=challenge&ref_medium=discover",
   },
   {
-    id: 7,
+    id: 8,
     type: "Competitions",
     date: "31/12/2024",
     img: blankImage,
@@ -70,7 +79,7 @@ const items = [
     link: "https://iymc.info/en/",
   },
   {
-    id: 8,
+    id: 9,
     type: "Competitions",
     img: blankImage,
     date: "10/12/2024",
@@ -79,7 +88,7 @@ const items = [
     link: "https://www.kangaroomath.com.my/",
   },
   {
-    id: 9,
+    id: 10,
     type: "Competitions",
     img: blankImage,
     date: "10/12/2023",
@@ -88,7 +97,7 @@ const items = [
     link: "https://seamo-official.org/",
   },
   {
-    id: 10,
+    id: 11,
     type: "Competitions",
     img: blankImage,
     date: "05/04/2023",
